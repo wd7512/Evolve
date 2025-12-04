@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="lib/buefy.min.0.9.22.css">
     <link rel="stylesheet" type="text/css" href="lib/weather-icons.min.css">
     <link rel="stylesheet" type="text/css" href="evolve/evolve.css">
-    <link rel="stylesheet" type="text/css" href="evolve/custom.css">
+    <script>
+        if (Math.random() < 0.1) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'evolve/custom.css';
+            document.head.appendChild(link);
+        }
+    </script>
     <script src="https://unpkg.com/jquery@3.6.3/dist/jquery.min.js"
         integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE"
         crossorigin="anonymous"></script>
